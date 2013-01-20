@@ -79,9 +79,9 @@ a:active
 {
 	background-color: #4C4E54;
 	margin: 0 auto 0 auto; /* Sets the margin properties for an element using shorthand notation (top, right, bottom, left) */
-	min-width: 760px;
+	min-width: 500px;
 	text-align: left; /* Redefines the text alignment defined by the body element. */
-	width: 80%;
+	width: 650px;
 }
 
 #outerWrapper #header
@@ -118,9 +118,7 @@ a:active
 /* Contains the main page content. When using a mutliple column layout the margins will be set to account for the floated columns' width, margins, and padding. */
 #outerWrapper #contentWrapper #content
 {
-	margin: 0 0 0 0; /* Sets the margin properties for an element using shorthand notation (top, right, bottom, left) */
-	padding: 10px 10px 10px 10px; /* Sets the padding properties for an element using shorthand notation (top, right, bottom, left) */
-	min-height: 400px;
+	height: 400px;
 }
 
 #outerWrapper #footer
