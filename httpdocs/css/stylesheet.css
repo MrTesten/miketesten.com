@@ -113,6 +113,8 @@ a:active
 #outerWrapper td:hover
 {
 	background-color: #C86400;
+	cursor: pointer;
+	cursor: hand;
 }
 
 /* Contains the main page content. When using a mutliple column layout the margins will be set to account for the floated columns' width, margins, and padding. */
