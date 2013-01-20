@@ -2,43 +2,25 @@
 $(document).ready(function()
 {
 	var content = $("#content");
-	//var menu = $("#pages td");
+	var menu = $("#pages td");
 
-	content.load("pages/home.php");
+	content.load("pages/home.html");
 	var displayedPage = "home";
 
-	/*menu.click(function()
+	menu.click(function()
 	{
-		switch(this.id)
+		var requestedPage = this.id;
+		if(displayedPage != requestedPage)
 		{
-			case "home":
-				if (displayedPage != "home")
+			content.fadeOut(200, function()
+			{
+				var pagePath = "pages/"+requestedPage+".html";
+				content.load(pagePath, function()
 				{
-					content.fadeOut(200, function()
-					{
-						content.load("pages/home.php", function()
-						{
-							content.fadeIn(200);
-						});
-					});
-					displayedPage = "home";
-				}
-				break;
-			case "projects":
-				if (displayedPage != "projects")
-				{
-					content.fadeOut(200, function()
-					{
-						content.load("pages/projects.php", function()
-						{
-							content.fadeIn(200);
-						});
-					});
-					displayedPage = "projects";
-				}
-				break;
-			default:
-				break;
+					content.fadeIn(200);
+				});
+			});
+			displayedPage = requestedPage;
 		}
-	});*/
+	});
 });
