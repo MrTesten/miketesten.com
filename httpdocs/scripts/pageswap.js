@@ -2,7 +2,7 @@
 $(document).ready(function()
 {
 	var content = $("#content");
-	var menu = $("#pages td");
+	var menu = $("#pages li");
 
 	content.load("pages/home.html");
 	var displayedPage = "home";
