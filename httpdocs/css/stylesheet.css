@@ -1,13 +1,15 @@
 /*Header/Footer*/
 
-body {
+body
+{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	cursor: default;
-	background: url(images/grey.png);
+	background: url(images/background.png);
 }
 
-.header {
+.header
+{
 	position: fixed;
 	width: 100%;
 	top: 0px;
@@ -15,10 +17,11 @@ body {
 	height: 100px;
 	opacity: 0.9;
 	font-size: 16px;
-	background: url(images/dark_wall.png);
+	background: url(images/dark.png);
 }
 
-.header #title {
+.header #title
+{
 	position: absolute;
 	top: 10px;
 	left: 20px;
@@ -26,11 +29,13 @@ body {
 	text-transform: uppercase;
 }
 
-.header #title:hover {
+.header #title:hover
+{
 	color: #33ccff;
 }
 
-.header #subtitle {
+.header #subtitle
+{
 	position: absolute;
 	top: 30px;
 	left: 20px;
@@ -38,7 +43,8 @@ body {
 	text-transform: uppercase;
 }
 
-#pages {
+#pages
+{
 	position: absolute;
 	white-space: nowrap;
 	float: right;
@@ -48,28 +54,32 @@ body {
 	font-size: 12px;
 }
 
-#pages li{
+#pages li
+{
 	float: right;
 	padding-left: 5px;
 	padding-right: 5px;
 	color: #ffffff;
 }
 
-#pages li:hover {
+#pages li:hover
+{
 	color: #33ccff;
 }
 
-.footer {
+.footer
+{
 	position: fixed;
 	width: 100%;
 	min-width: 600px;
 	height: 40px;
 	bottom: 0px;
-	background: url(images/dark_wall.png);
+	background: url(images/dark.png);
 	opacity: 0.9;
 }
 
-.footer p{
+.footer p
+{
 	text-align: right;
 	color: #ffffff;
 	font-size: 10px;
@@ -77,71 +87,33 @@ body {
 }
 
 /* Content */
-
-#content { /*note: height of this div is dynamic */
+#content
+{
 	position: relative;
-    width: 650px;
-    margin-right: auto;
-    margin-left: auto;
-    overflow: auto;
-    top: 100px;
-    opacity:0.9;
+	color: #bababa;
+	width: 650px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: auto;
+	top: 100px;
+	opacity:0.9;
 }
 
-#content p {
+#content p
+{
 	text-align: center;
 	padding-bottom: 15px;
 	padding-top: 10px;
 }
 
-#content a {
+#content a
+{
 	color: #33ccff;
 	text-decoration: none;
 }
 
-#content dt {
-	font-weight: bold;
-	padding-bottom: 10px;
-}
-
-#content dd {
-	padding-bottom: 5px;
-}
-
-#projectlist {
-	padding-top: 20px;
-}
-
-.projectshort {
-	font-size: 12px;
-}
-
-.feedlist {
-	list-style: none;
-}
-
-.feeddate {
-	font-size: 9px;
-	padding-top: 10px;
-	color: #5e5e5e;
-	text-align: center;
-}
-
-.feedtitle {
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-.feedextra {
-	font-family: 'Droid Sans Mono', sans-serif;
-	font-size: 12px;
-	text-indent: -20px;
-	padding-left: 40px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-}
-
-hr {
+hr
+{
 	display: block;
 	position: relative;
 	padding: 0;
